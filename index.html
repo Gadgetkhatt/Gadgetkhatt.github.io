@@ -6,7 +6,6 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="style.css">
 
-
 <title>MGMT</title>
 </head>
 
@@ -20,44 +19,40 @@
     background-attachment: fixed;
     background-image: url("img/mediamain.jpg");
     min-height: 75%;}
-</style>
 
-<!--hamburger menu style-->
-<style>
 
+/* hamburger style */
 .hamburgerBun {
-  position: absolute;
+  position:fixed;
   left: 50%;
   top: 60px;
 }
 .hamburger {
   width: 35px;
   height: 5px;
-  background-color: black;
+  background-color: white;
   margin: 6px 0;
 }
+
+
+.center {
+  padding: 30% 0;
+  text-align: center;
+}
+
 </style>
 
 
 
 <body class="bgimg">
 
-  <!--Navigation bar -->
-  <nav>
-    <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="">Discography</a></li>
-    <li><a href="merchandise.html">Merchandise</a></li>
-    <li><a href="tourdates.html">Tour Dates</a></li>
-    <li><a href="media.html">Media</a></li>
-  </ul>
-  </nav>
-
-
+  <!-- mgmt logo -->
+  <div class="center">
+  <img src="img/white_logo.png" style="width:30%;">
 
 
   <!-- Hamburger menu -->
+  <nav>
  <span onclick="openNav()">
   <div class="hamburgerBun">
     <div class="hamburger"></div>
@@ -65,9 +60,10 @@
     <div class="hamburger"></div>
   </div>
 </span>
+</nav>
 
 
-  <!-- The overlay -->
+  <!-- The navigation overlay -->
   <div id="myNav" class="overlay">
 
     <!-- Button to close the overlay navigation -->
@@ -75,12 +71,12 @@
 
     <!-- Overlay content -->
     <div class="overlay-content" onlick="openNav()">
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Discography</a>
-      <a href="#">Merchandise</a>
-      <a href="#">Tour</a>
-      <a href="#">Media</a>
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="discography.html">DISCOGRAPHY</a>
+      <a href="merchandise.html">MERCHANDISE</a>
+      <a href="tour.html">TOUR</a>
+      <a href="media.html">MEDIA</a>
     </div>
 
   </div>
@@ -98,7 +94,6 @@ function closeNav() {
   document.getElementById("myNav").style.height = "0%";
 }
 </script>
-
 
 
 
