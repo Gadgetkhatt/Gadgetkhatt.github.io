@@ -1,22 +1,39 @@
-/* body color */
-body {
-  background-color: grey
-
-  ;
+/* hamburger style */
+.hamburgerBun {
+  position:fixed;
+  left: 50%;
+  top: 60px;
+}
+.hamburger {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+}
+.center {
+  padding: 30% 0;
+  text-align: center;
 }
 
 
+/* body color */
+body {
+  background-color: grey
+  ;
+}
 
 
 /* paragraph text color */
 p {
   color: white;
   font-family: sans-serif;
-
 }
 
 
-
+h1 {
+  color: black;
+  font-family: sans-serif;
+}
 
 
 /* navigation bar */
@@ -27,11 +44,9 @@ ul {
   overflow: hidden;
   background-color: #333333;
 }
-
 li {
   float: left;
 }
-
 li a {
   display: block;
   color: white;
@@ -39,15 +54,9 @@ li a {
   padding: 16px;
   text-decoration: none;
 }
-
 li a:hover {
   background-color: #111111;
 }
-
-
-
-
-
 
 
 
