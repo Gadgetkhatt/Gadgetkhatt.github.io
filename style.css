@@ -11,7 +11,7 @@
   margin: 6px 0;
 }
 .center {
-  padding: 30% 0;
+  padding: 20% 0;
   text-align: center;
 }
 
@@ -31,32 +31,47 @@ p {
 
 
 h1 {
-  color: black;
+  color: white;
   font-family: sans-serif;
 }
 
-
-/* navigation bar */
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333333;
-}
-li {
-  float: left;
-}
-li a {
-  display: block;
+li{
   color: white;
-  text-align: center;
-  padding: 16px;
+  font-size: 17px;
+}
+
+
+
+
+/*links*/
+a:link {
+  color: #FF00FF;
+  background-color: transparent;
   text-decoration: none;
 }
-li a:hover {
-  background-color: #111111;
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
 }
+
+a:hover {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
+
+
+
 
 
 
