@@ -1,29 +1,118 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Media</title>
 
-  <title>Tour</title>
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #3c3c3c;
+    }
+
+    table {
+      font-family: arial, helvetica, sans-serif;
+      width: 100%;
+      color: #FF00FF;
+    }
+
+/*Gallery grid*/
+
+.grid-container {
+  display: grid;
+  grid-gap: 2px;
+  background-color: #2196F3;
+  padding: 3px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 40px;
+  font-size: 30px;
+}
+
+.item1 {
+  grid-column: 1 /3;
+    grid-row: 1 / span 3;
+}
+
+.item2 {
+  grid-column: 4/7;
+  grid-row: 1 / span 2;
+}
+.item5 {
+  grid-column: 1 / span 3;
+  grid-row: 4;
+}
+.item6 {
+    grid-column: 4/6;
+  grid-row: 4;
+}
+.item7 {
+    grid-column: 6/7;
+  grid-row: 4;
+}
+
+
+
+.About {
+  position: relative;
+  top: 100px;
+  left: 5%;
+}
+
+
+  </style>
 </head>
 
-<style>
-  body {
-    background-color: #3c3c3c;
-  }
-
-  table {
-    font-family: arial, helvetica,sans-serif;
-    width: 100%;
-    color: #FF00FF;
-  }
-</style>
-
-
-
 <body>
+<!--Gallery Grid-->
+
+<!--Media-->
+<div class="About">
+  <h1 style="color:black; font-size: 50px;"> Media </h1>
+</div>
+
+<div class="grid-container">
+  <div class="grid-item item1">1</div>
+  <div class="grid-item item2">2</div>
+  <div class="grid-item item3">3</div>
+  <div class="grid-item item4">4</div>
+  <div class="grid-item item5">5</div>
+  <div class="grid-item item6">6</div>
+  <div class="grid-item item7">7</div>
+</div>
+
+<!--about-->
+<div class="About">
+  <h1 style="color:#FAEBD7; font-size: 50px;"> Videos </h1>
+</div>
+
+<!--Videos-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+      <div class="col-md-6"> <iframe width="600" height="345" src="https://www.youtube.com/embed/MmZexg8sxyk">
+      </iframe> </div>
+      <div class="col-md-6"> <iframe width="600" height="345" src="https://www.youtube.com/embed/MmZexg8sxyk">
+      </iframe> </div>
+      <div class="col-md-6"> <iframe width="600" height="345" src="https://www.youtube.com/embed/MmZexg8sxyk">
+      </iframe> </div>
+      <div class="col-md-6"> <iframe width="600" height="345" src="https://www.youtube.com/embed/MmZexg8sxyk">
+      </iframe> </div>
+    </div>
+</div>
+
+
+
+
   <!-- Hamburger menu -->
   <nav>
     <span onclick="openNav()">
@@ -71,4 +160,5 @@
 
 
 </body>
+
 </html>
