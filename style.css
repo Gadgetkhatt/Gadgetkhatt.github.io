@@ -40,6 +40,19 @@ li{
   font-size: 17px;
 }
 
+.disco{
+  margin:10px 50px;
+}
+.disco img{
+  transition: 1s;
+  padding:15px;
+}
+
+.disco img:hover{
+  filter:grayscale(100%);
+  transform: scale(1.1);
+}
+
 
 
 

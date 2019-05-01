@@ -19,19 +19,18 @@
 
     .container {
       padding: 40px;
-    }
-
-    .top-container {
-      background-color: black;
-      padding: 30px;
-      text-align: center;
+      top: 130px;
+      position: relative;
     }
 
     /* Style the header */
     .header {
-      padding: 10px 16px 60px;
+      padding: 30px 16px;
+      color: black;
       background: black;
-      color: #f1f1f1;
+      width: 100%;
+      top: 0;
+      position: fixed;
     }
 
     /* Page content */
@@ -54,37 +53,22 @@
 </head>
 
 <body>
+  <!-- GRIDS -->
+  <div class="disco">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4"><a href"img/album4.jpg"><img src="img/congratulations.jpg"></a></div>
+        <div class="col-md-4"><a href"img/album4.jpg"><img src="img/mgmt_record.jpg"></a></div>
+        <div class="col-md-4"><a href"img/album4.jpg"><img src="img/littledarkage.jpg"></a></div>
+        <div class="col-md-3 col-md-offset-4"><a href"img/album4.jpg"><img src="img/oracularspectacular.jpg"></a></div>
+      </div>
+    </div>
+  </div>
+
 
   <div class="header" id="myHeader">
     <h2>My Header</h2>
   </div>
-
-
-
-
-
-  <!-- GRIDS -->
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        <img src="img/congratulations.jpg">
-      </div>
-      <div class="col-md-4">
-        <img src="img/congratulations.jpg">
-      </div>
-      <div class="col-md-4">
-        <img src="img/congratulations.jpg">
-      </div>
-    </div>
-    <br>
-    <div class="row">
-      <div class="col-md-3 col-md-offset-4">
-        <img src="img/congratulations.jpg">
-      </div>
-    </div>
-  </div>
-
-
 
   <!-- Hamburger menu -->
   <nav>
@@ -96,7 +80,6 @@
       </div>
     </span>
   </nav>
-
 
   <!-- The navigation overlay -->
   <div id="myNav" class="overlay">
@@ -113,9 +96,7 @@
       <a href="tour.html">TOUR</a>
       <a href="media.html">MEDIA</a>
     </div>
-
   </div>
-
 
 
   <script>
@@ -129,12 +110,6 @@
       document.getElementById("myNav").style.height = "0%";
     }
   </script>
-
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="js/bootstrap.min.js"></script>
-
 
 
   <!--sticky-->
@@ -155,8 +130,19 @@
     }
   </script>
 
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+
+
+
+
+
+
 
 
 
 </body>
+
 </html>

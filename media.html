@@ -22,140 +22,139 @@
       color: #FF00FF;
     }
 
-/*Gallery grid*/
+    /*Gallery grid*/
 
-.grid-container {
-  display: grid;
-  grid-gap: 2px;
-  background-color: #2196F3;
-  padding: 3px;
-}
+    .grid-container {
+      display: grid;
+      grid-gap: 1px;
+      background-color: grey;
+      padding: 0px;
+    }
 
-.grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  padding: 40px;
-  font-size: 30px;
-}
+    .grid-item {
+      background-color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+      padding: 0px;
+      font-size: 30px;
+    }
 
-.item1 {
-  grid-column: 1 /3;
-    grid-row: 1 / span 3;
-}
+    .item1 {
+      grid-column: 1 /3;
+      grid-row: 1 / span 3;
+    }
 
-.item2 {
-  grid-column: 4/7;
-  grid-row: 1 / span 2;
-}
-.item5 {
-  grid-column: 1 / span 3;
-  grid-row: 4;
-}
-.item6 {
-    grid-column: 4/6;
-  grid-row: 4;
-}
-.item7 {
-    grid-column: 6/7;
-  grid-row: 4;
-}
+    .item2 {
+      grid-column: 4/7;
+      grid-row: 1 / span 2;
+    }
 
+    .item5 {
+      grid-column: 1 / span 3;
+      grid-row: 4;
+    }
 
+    .item6 {
+      grid-column: 4/6;
+      grid-row: 4;
+    }
 
-.About {
-  position: relative;
-  top: 100px;
-  left: 5%;
-}
+    .item7 {
+      grid-column: 6/7;
+      grid-row: 4;
+    }
+    .About {
+      position: relative;
+      top: 100px;
+      left: 5%;
+    }
 
+    img {
+    min*-width: 100%;
+    min*-height: 100%;
+    display: block;
+    object-fit: cover}
 
   </style>
 </head>
 
 <body>
-<!--Gallery Grid-->
+  <!--Gallery Grid-->
 
-<!--Media-->
-<div class="About">
-  <h1 style="color:black; font-size: 50px;"> Media </h1>
-</div>
-
-<div class="grid-container">
-  <div class="grid-item item1">1</div>
-  <div class="grid-item item2">2</div>
-  <div class="grid-item item3">3</div>
-  <div class="grid-item item4">4</div>
-  <div class="grid-item item5">5</div>
-  <div class="grid-item item6">6</div>
-  <div class="grid-item item7">7</div>
-</div>
-
-<!--about-->
-<div class="About">
-  <h1 style="color:#FAEBD7; font-size: 50px;"> Videos </h1>
-</div>
-
-<!--Videos-->
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-12">
-      <div class="col-md-6"> <iframe width="600" height="345" src="https://www.youtube.com/embed/MmZexg8sxyk">
-      </iframe> </div>
-      <div class="col-md-6"> <iframe width="600" height="345" src="https://www.youtube.com/embed/MmZexg8sxyk">
-      </iframe> </div>
-      <div class="col-md-6"> <iframe width="600" height="345" src="https://www.youtube.com/embed/MmZexg8sxyk">
-      </iframe> </div>
-      <div class="col-md-6"> <iframe width="600" height="345" src="https://www.youtube.com/embed/MmZexg8sxyk">
-      </iframe> </div>
-    </div>
-</div>
-
-
-
-
-  <!-- Hamburger menu -->
-  <nav>
-    <span onclick="openNav()">
-      <div class="hamburgerBun">
-        <div class="hamburger"></div>
-        <div class="hamburger"></div>
-        <div class="hamburger"></div>
-      </div>
-    </span>
-  </nav>
-
-
-  <!-- The navigation overlay -->
-  <div id="myNav" class="overlay">
-
-    <!-- Button to close the overlay navigation -->
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-    <!-- Overlay content -->
-    <div class="overlay-content" onlick="openNav()">
-      <a href="index.html">HOME</a>
-      <a href="about.html">ABOUT</a>
-      <a href="discography.html">DISCOGRAPHY</a>
-      <a href="merchandise.html">MERCHANDISE</a>
-      <a href="tour.html">TOUR</a>
-      <a href="media.html">MEDIA</a>
-    </div>
-
+  <!--Media-->
+  <div class="About">
+    <h1 style="color:black; font-size: 50px;"> Media </h1>
   </div>
 
+  <div class="grid-container">
+    <div class="grid-item item1"><img class="img-responsive" src="img/media01.jpg"></div>
+    <div class="grid-item item2"><img class="img-responsive" src="img/media02.jpg"></div>
+    <div class="grid-item item3"><img class="img-responsive" src="img/shirt01.jpg"></div>
+    <div class="grid-item item4"><img class="img-responsive" src="img/shirt01.jpg"></div>
+    <div class="grid-item item5"><img class="img-responsive" src="img/shirt01.jpg"></div>
+    <div class="grid-item item6"><img class="img-responsive" src="img/shirt01.jpg"></div>
+    <div class="grid-item item7"><img class="img-responsive" src="img/shirt01.jpg"></div>
+  </div>
+
+  <!--Videos-->
+  <div class="About">
+    <h1 style="color:#FAEBD7; font-size: 50px;"> Videos </h1>
+  </div>
+
+  <!--Videos-->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="col-md-6"> <iframe width="600" height="345" src="https://www.youtube.com/embed/MmZexg8sxyk"></iframe> </div>
+        <div class="col-md-6"> <iframe width="600" height="345" src="https://www.youtube.com/embed/tmozGmGoJuw"></iframe> </div>
+        <div class="col-md-6"> <iframe width="600" height="345" src="https://www.youtube.com/embed/rtL5oMyBHPs"></iframe> </div>
+        <div class="col-md-6"> <iframe width="600" height="345" src="https://www.youtube.com/embed/cB7IAXrCkO8"></iframe> </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Hamburger menu -->
+    <nav>
+      <span onclick="openNav()">
+        <div class="hamburgerBun">
+          <div class="hamburger"></div>
+          <div class="hamburger"></div>
+          <div class="hamburger"></div>
+        </div>
+      </span>
+    </nav>
 
 
-  <script>
-    /* Open */
-    function openNav() {
-      document.getElementById("myNav").style.height = "100%";
-    }
+    <!-- The navigation overlay -->
+    <div id="myNav" class="overlay">
 
-    /* Close */
-    function closeNav() {
-      document.getElementById("myNav").style.height = "0%";
-    }
-  </script>
+      <!-- Button to close the overlay navigation -->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+      <!-- Overlay content -->
+      <div class="overlay-content" onlick="openNav()">
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="discography.html">DISCOGRAPHY</a>
+        <a href="merchandise.html">MERCHANDISE</a>
+        <a href="tour.html">TOUR</a>
+        <a href="media.html">MEDIA</a>
+      </div>
+
+    </div>
+
+
+
+    <script>
+      /* Open */
+      function openNav() {
+        document.getElementById("myNav").style.height = "100%";
+      }
+
+      /* Close */
+      function closeNav() {
+        document.getElementById("myNav").style.height = "0%";
+      }
+    </script>
 
 
 
