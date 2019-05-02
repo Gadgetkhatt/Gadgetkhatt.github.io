@@ -55,6 +55,21 @@ li{
 
 
 
+.merch{
+  margin:0px 0px;
+}
+.merch img{
+  transition: 1s;
+  padding:15px;
+}
+
+.merch img:hover{
+  filter:grayscale(100%);
+  transform: scale(1.1);
+}
+
+
+
 
 /*links*/
 a:link {
