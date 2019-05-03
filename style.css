@@ -60,7 +60,7 @@ li{
 }
 .merch img{
   transition: 1s;
-  padding:15px;
+  padding:16px;
 }
 
 .merch img:hover{
@@ -96,6 +96,16 @@ a:active {
   text-decoration: underline;
 }
 
+
+/* Style the header */
+.header {
+  padding: 30px 16px;
+  color: black;
+  background: black;
+  width: 100%;
+  top: 0;
+  position: fixed;
+}
 
 
 
