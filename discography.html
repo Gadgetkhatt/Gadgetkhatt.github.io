@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/lightbox.min.css" rel="stylesheet">
   <title>Discography</title>
 
   <!-- Bootstrap -->
@@ -40,10 +41,10 @@
   <div class="disco">
     <div class="container">
       <div class="row">
-        <div class="col-md-4"><a href="img/album4.jpg"><img src="img/congratulations.png"></img></a></div>
-        <div class="col-md-4"><a href="img/album3.jpg"><img src="img/mgmt_record.png"></img></a></div>
-        <div class="col-md-4"><a href="img/album2.jpg"><img src="img/littledarkage.png"></img></a></div>
-        <div class="col-md-3 col-md-offset-4"><a href="img/album1.jpg"><img src="img/oracularspectacular.png"></img></a></div>
+        <div class="col-md-4"><a href="img/album4.jpg"data-lightbox="image-1" data-title="My caption"><img src="img/congratulations.png"></img></a></div>
+        <div class="col-md-4"><a href="img/album3.jpg"data-lightbox="image-1" data-title="My caption">><img src="img/mgmt_record.png"></img></a></div>
+        <div class="col-md-4"><a href="img/album2.jpg"data-lightbox="image-1" data-title="My caption">><img src="img/littledarkage.png"></img></a></div>
+        <div class="col-md-3 col-md-offset-4"><a href="img/album1.jpg"data-lightbox="image-1" data-title="My caption">><img src="img/oracularspectacular.png"></img></a></div>
       </div>
     </div>
   </div>
@@ -93,6 +94,11 @@
       document.getElementById("myNav").style.height = "0%";
     }
   </script>
+
+
+
+  <!--lightbox-->
+  <script src="js/lightbox-plus-jquery.min.js"></script>
 
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

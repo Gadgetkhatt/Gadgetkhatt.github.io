@@ -20,9 +20,11 @@
       color: black;
     }
 
+    /*remove the lines?
     .container-fluid div {
       border: 1px #000000 solid;
     }
+    */
 
     .container-fluid-1 div {
       padding: 0px;
@@ -47,7 +49,6 @@
     <div class="col-md-12"><img class="img-responsive" src="img/merchjumboheader.jpg"></div>
   </div>
 
-
   <!--menu-->
   <div class="container-fluid-2">
     <div class="col-md-2"><a href="sales.html">
@@ -67,18 +68,21 @@
       </a></div>
   </div>
 
-
   <!--merch-->
   <div class="merch">
     <div class="container-fluid">
       <div class="col-md-4"> <img class="img-responsive" src="img/shirt01.jpg">
-        <p>Red Buzz t-shirt</p>
-        <p>$25.00</p>
       </div>
       <div class="col-md-8">
         <h1>MGMT FUNZONE 2.0 TSHIRT</h1>
         <hr />
-        <h2><p> Availability: In stock</p><p>Code: MG1982</p></h2>
+        <h2>
+          <p> Availability:</p>
+          <p>
+            <font color="green">In stock</font>
+          </p>
+          <p>Code: MG1982</p>
+        </h2>
         <hr />
         <p>MGMT's Dragon design printed on Next Level Ivory/Natural 100% Cotton. See size chart for measurements.</p>
         <hr>
@@ -99,21 +103,8 @@
         </div>
         </p>
         <!-- Large button group -->
-        <div class="btn-group">
-          <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Add to Cart <span class="caret"></span>
-          </button>
-          <ul class="dropdown-menu">
-            ...
-          </ul>
-        </div>
-
-        </p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-        anim id est laborum.</p>
+        <button type="button" onclick="alert('Added to Cart!')">Add to Cart</button>
+        <hr />
       </div>
 
 
