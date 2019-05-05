@@ -16,8 +16,49 @@
       background-color: white;
     }
 
-    p {
+    p{
       color: black;
+    }
+
+    .filterDiv {
+      border: 1px #000000 solid;
+      float: left;
+      color: #ffffff;
+      width: 470px;
+      line-height: 10px;
+
+      text-align: center;
+      margin: 0px;
+      display: none;
+    }
+
+    .show {
+      display: block;
+    }
+
+    .container {
+      margin-top: 0px;
+      overflow: hidden;
+    }
+
+    /* Style the buttons */
+    .btn {
+      border: none;
+      font-size: 17px;
+      outline: none;
+      padding: 12px 16px;
+      background-color: white;
+      cursor: pointer;
+      border-radius: 0 !important;
+    }
+
+    .btn:hover {
+      background-color: #ddd;
+    }
+
+    .btn.active {
+      background-color: #666;
+      color: white;
     }
 
     .container-fluid div {
@@ -26,53 +67,57 @@
     }
 
     .container-fluid-1 div {
-    padding:0px;
+      padding: 0px;
     }
-
-    .container-fluid-2 div {
-        background-color: white;
-        margin-left: 1%;
-        padding:0px;
-      }
-
-
   </style>
-</head>
 
 <body>
-
-
   <!-- GRIDS-->
   <div class="container-fluid-1">
-      <div class="col-md-12"><img class="img-responsive" src="img/merchjumboheader.jpg"></div>
+    <div class="col-md-12"><img class="img-responsive" src="img/merchjumboheader.jpg"></div>
   </div>
 
 
-<!--menu-->
-  <div class="container-fluid-2">
-      <div class="col-md-2"><a href="sales.html"><h3>Sales</h3></a></div>
-      <div class="col-md-2"><a href="music.html"><h3>Music</h3></a></div>
-      <div class="col-md-2"><a href="apparel.html"><h3>Apparel</h3></a></div>
-      <div class="col-md-3"><a href="posters.html"><h3>Posters</h3></a></div>
-      <div class="col-md-2"><a href="accessories.html"><h3>Accesories</h3></a></div>
+  <div id="myBtnContainer">
+    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+      <button class="btn" onclick="filterSelection('apparel')"> Apparel</button>
+
+    <button class="btn" onclick="filterSelection('music')"> Music</button>
+
+    <button class="btn" onclick="filterSelection('posters')"> Posters</button>
+    <button class="btn" onclick="filterSelection('accessories')"> Accessories</button>
+    <button class="btn" onclick="filterSelection('sales')"> Sales</button>
   </div>
 
-
-<!--merch-->
-<div class="merch">
-  <div class="container-fluid">
-      <div class="col-md-4"><a href="productpage_dragon.html"><img class="img-responsive" src="img/shirt01.jpg"></a><p>Girl's Dragon t-shirt</p><p>$25.00</p></div>
-      <div class="col-md-4"><a href="productpage_opart_fall.html"><img class="img-responsive" src="img/shirt02.jpg"></a><p>Girl's Op-Art Fall 2013 Tour T-shirt</p><p>$25.00</p></div>
-      <div class="col-md-4"> <img class="img-responsive" src="img/shirt03.jpg"><p>Girl's Anchorage '14 t-shirt</p><p>$25.00</p></div>
-      <div class="col-md-4"> <img class="img-responsive" src="img/shirt04.jpg"><p>Red Buzz t-shirt</p><p>$25.00</p></div>
-      <div class="col-md-4"> <img class="img-responsive" src="img/shirt05.jpg"><p>Girl's Faces Fall 2013 t-shirt</p><p>$25.00</p></div>
-      <div class="col-md-4"> <img class="img-responsive" src="img/shirt06.jpg"><p>Girl's Op Art t-shirt</p><p>$25.00</p></div>
-      <div class="col-md-4"> <img class="img-responsive" src="img/shirt07.jpg"><p>Black Scratch shirt</p><p>$25.00</p></div>
-      <div class="col-md-4"> <img class="img-responsive" src="img/shirt11.jpg"><p>Heart Sweat shirt</p><p>$25.00</p></div>
-      <div class="col-md-4"> <img class="img-responsive" src="img/shirt08.jpg"><p>Glooby Loops t-shirt</p><p>$25.00</p></div>
-      <div class="col-md-4"> <img class="img-responsive" src="img/shirt09.jpg"><p>Girl's Surf t-shirt</p><p>$25.00</p></div>
-      <div class="col-md-4"> <img class="img-responsive" src="img/shirt10.jpg"><p>Heather Logo shirt</p><p>$25.00</p></div>
-  </div>
+  <div class="merch">
+    <div class="container-fluid">
+      <div class="filterDiv sales"><img class="img-responsive" src="img/sale01.jpg"><p>Heart Sweat shirt</p><p>$25.00</p></div>
+      <div class="filterDiv sales"><img class="img-responsive" src="img/sale02.jpg"><p>Heart Sweat shirt</p><p>$25.00</p></div>
+      <div class="filterDiv sales"><img class="img-responsive" src="img/sale03.jpg"><p>Heart Sweat shirt</p><p>$25.00</p></div>
+      <div class="filterDiv apparel"><a href="productpage_dragon.html"><img class="img-responsive" src="img/shirt01.jpg"></a><p>Girl's Dragon t-shirt</p><p>$25.00</p></div>
+      <div class="filterDiv apparel"><a href="productpage_opart_fall.html"><img class="img-responsive" src="img/shirt02.jpg"></a><p>Girl's Op-Art Fall 2013 Tour T-shirt</p><p>$25.00</p></div>
+      <div class="filterDiv apparel"><img class="img-responsive" src="img/shirt03.jpg"><p>Girl's Anchorage '14 t-shirt</p><p>$25.00</p></div>
+      <div class="filterDiv apparel"><img class="img-responsive" src="img/shirt04.jpg"><p>Red Buzz t-shirt</p><p>$25.00</p></div>
+      <div class="filterDiv apparel"><img class="img-responsive" src="img/shirt05.jpg"><p>Girl's Faces Fall 2013 t-shirt</p><p>$25.00</p></div>
+      <div class="filterDiv apparel"><img class="img-responsive" src="img/shirt06.jpg"><p>Girl's Op Art t-shirt</p><p>$25.00</p></div>
+      <div class="filterDiv apparel"><img class="img-responsive" src="img/shirt07.jpg"><p>Black Scratch shirt</p><p>$25.00</p></div>
+      <div class="filterDiv apparel"><img class="img-responsive" src="img/shirt08.jpg"><p>Glooby Loops t-shirt</p><p>$25.00</p></div>
+      <div class="filterDiv apparel"><img class="img-responsive" src="img/shirt09.jpg"><p>Girl's Surf t-shirt</p><p>$25.00</p></div>
+      <div class="filterDiv apparel"><img class="img-responsive" src="img/shirt10.jpg"><p>Heather Logo shirt</p><p>$25.00</p></div>
+      <div class="filterDiv apparel"><img class="img-responsive" src="img/shirt11.jpg"><p>Heart Sweat shirt</p><p>$25.00</p></div>
+      <div class="filterDiv music"><img class="img-responsive" src="img/record01.jpg"><p>Heart Sweat shirt</p><p>$25.00</p></div>
+      <div class="filterDiv music"><img class="img-responsive" src="img/record02.jpg"><p>Heart Sweat shirt</p><p>$25.00</p></div>
+      <div class="filterDiv music"><img class="img-responsive" src="img/record03.jpg"><p>Heart Sweat shirt</p><p>$25.00</p></div>
+      <div class="filterDiv music"><img class="img-responsive" src="img/record04.jpg"><p>Heart Sweat shirt</p><p>$25.00</p></div>
+      <div class="filterDiv posters"><img class="img-responsive" src="img/poster01.jpg"><p>Heart Sweat shirt</p><p>$25.00</p></div>
+      <div class="filterDiv posters"><img class="img-responsive" src="img/poster02.jpg"><p>Heart Sweat shirt</p><p>$25.00</p></div>
+      <div class="filterDiv posters"><img class="img-responsive" src="img/poster03.jpg"><p>Heart Sweat shirt</p><p>$25.00</p></div>
+      <div class="filterDiv posters"><img class="img-responsive" src="img/poster04.jpg"><p>Heart Sweat shirt</p><p>$25.00</p></div>
+      <div class="filterDiv accessories"><img class="img-responsive" src="img/bag.jpg"><p>Heart Sweat shirt</p><p>$25.00</p></div>
+      <div class="filterDiv accessories"><img class="img-responsive" src="img/cards.jpg"><p>Heart Sweat shirt</p><p>$25.00</p></div>
+      <div class="filterDiv accessories"><img class="img-responsive" src="img/patch.jpg"><p>Heart Sweat shirt</p><p>$25.00</p></div>
+      <div class="filterDiv accessories"><img class="img-responsive" src="img/stickerandpin.jpg"><p>Heart Sweat shirt</p><p>$25.00</p></div>
+      </div>
   </div>
 
   <!--header-->
@@ -132,10 +177,60 @@
         </script>
 
 
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="js/bootstrap.min.js"></script>
+
+  <script>
+    filterSelection("all")
+
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("filterDiv");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {
+          element.className += " " + arr2[i];
+        }
+      }
+    }
+
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+  </script>
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>

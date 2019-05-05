@@ -56,11 +56,12 @@ li{
 
 
 .merch{
-  margin:0px 0px;
+  margin:0px 0px 0px 0px;
 }
+
 .merch img{
   transition: 1s;
-  padding:16px;
+  padding:22px;
 }
 
 .merch img:hover{
@@ -99,6 +100,7 @@ a:active {
 
 /* Style the header */
 .header {
+  opacity: 0.6;
   padding: 30px 16px;
   color: black;
   background: black;

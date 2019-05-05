@@ -26,6 +26,26 @@
     }
     */
 
+    /* Style the buttons */
+    .btn {
+      border: none;
+      font-size: 17px;
+      outline: none;
+      padding: 12px 16px;
+      background-color: white;
+      cursor: pointer;
+      border-radius: 0 !important;
+    }
+
+    .btn:hover {
+      background-color: #ddd;
+    }
+
+    .btn.active {
+      background-color: #666;
+      color: white;
+    }
+
     .container-fluid-1 div {
       padding: 0px;
     }
@@ -47,6 +67,15 @@
   <!-- GRIDS-->
   <div class="container-fluid-1">
     <div class="col-md-12"><img class="img-responsive" src="img/merchjumboheader.jpg"></div>
+  </div>
+
+  <div id="myBtnContainer">
+    <button class="btn active" onclick="filterSelection('all')">Show all</button>
+    <button class="btn" onclick="filterSelection('apparel')"> Apparel</button>
+    <button class="btn" onclick="filterSelection('music')"> Music</button>
+    <button class="btn" onclick="filterSelection('posters')"> Posters</button>
+    <button class="btn" onclick="filterSelection('accessories')"> Accessories</button>
+    <button class="btn" onclick="filterSelection('sales')"> Sales</button>
   </div>
 
   <!--menu-->
