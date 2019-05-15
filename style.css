@@ -18,10 +18,8 @@
 
 /* body color */
 body {
-  background-color: grey
-  ;
+  background-color: grey;
 }
-
 
 /* paragraph text color */
 p {
@@ -40,21 +38,7 @@ li{
   font-size: 17px;
 }
 
-.disco{
-  margin:10px 50px;
-}
-.disco img{
-  transition: 1s;
-  padding:15px;
-}
-
-.disco img:hover{
-  filter:grayscale(100%);
-  transform: scale(1.1);
-}
-
-
-
+/*merchandise*/
 .merch{
   margin:0px 0px 0px 0px;
 }
@@ -98,7 +82,7 @@ a:active {
 }
 
 
-/* Style the header */
+/* header */
 .header {
   opacity: 0.6;
   padding: 30px 16px;
