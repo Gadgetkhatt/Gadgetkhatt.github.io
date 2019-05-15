@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
 
 <head>
   <meta charset="UTF-8">
@@ -19,11 +20,32 @@
     background-image: url("img/mediamain.jpg");
     min-height: 75%;
   }
+
+  .wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /*background:#000000;*/
+    background: rgba(0, 0, 0, .90);
+  }
 </style>
 
 
 
 <body class="bgimg">
+
+  <!-- mgmt logo -->
+  <div class="wrapper">
+        <img src="img/white_logo.png" style="width:30%;">
+  </div>
+
+
+
+
+
+
 
     <!-- Hamburger menu -->
     <nav>
@@ -52,11 +74,8 @@
         <a href="tour.html">TOUR</a>
         <a href="media.html">MEDIA</a>
       </div>
-    </div>
 
-    <!-- mgmt logo -->
-    <div class="center">
-      <img src="img/white_logo.png" style="width:30%;">
+    </div>
 
 
 
@@ -71,6 +90,9 @@
         document.getElementById("myNav").style.height = "0%";
       }
     </script>
+
+
+
 
 </body>
 </html>
