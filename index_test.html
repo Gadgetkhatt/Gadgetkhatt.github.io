@@ -2,57 +2,42 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="stylesheet" type="text/css" href="navigationmenu.css">
 
-    <title>MGMT</title>
   </head>
   <body>
-    <!-- Hamburger menu -->
-    <nav>
-      <span onclick="openNav()">
-        <div class="hamburgerBun">
-          <div class="hamburger"></div>
-          <div class="hamburger"></div>
-          <div class="hamburger"></div>
-        </div>
-      </span>
-    </nav>
+    <!-- The overlay -->
+<div id="myNav" class="overlay">
 
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-    <!-- The navigation overlay -->
-    <div id="myNav" class="overlay">
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
 
-      <!-- Button to close the overlay navigation -->
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+</div>
 
-      <!-- Overlay content -->
-      <div class="overlay-content" onlick="openNav()">
-        <a href="index.html">HOME</a>
-        <a href="about.html">ABOUT</a>
-        <a href="discography.html">DISCOGRAPHY</a>
-        <a href="merchandise.html">MERCHANDISE</a>
-        <a href="tour.html">TOUR</a>
-        <a href="media.html">MEDIA</a>
-      </div>
-    </div>
-
-    <!-- mgmt logo -->
-    <div class="center">
-      <img src="img/white_logo.png" style="width:30%;">
+<!-- Use any element to open/show the overlay navigation menu -->
+<span onclick="openNav()">open</span>
 
 
 
-    <script>
-      /* Open */
-      function openNav() {
-        document.getElementById("myNav").style.height = "100%";
-      }
+<script>
+/* Open */
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
 
-      /* Close */
-      function closeNav() {
-        document.getElementById("myNav").style.height = "0%";
-      }
-    </script>
+/* Close */
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
+</script>
 
 
 
